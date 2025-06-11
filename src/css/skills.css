@@ -1,0 +1,90 @@
+.skills-cont {
+  min-height: 99vh;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: -2.5rem;
+  padding: 0.25rem 1rem;
+  background-color: white;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.icon-card {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 18px;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.group:hover .tooltip {
+  opacity: 1;
+}
+
+.group:hover .icon-card {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-cont {
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-cont {
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
+  .cont-tex {
+    font-size: 33px;
+  }
+  .para-tex {
+    font-size: smaller;
+  }
+}
