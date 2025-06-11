@@ -14,6 +14,7 @@ import problem_solving from "./problem_solving.png";
 import Python from "./Python.png";
 import React_Basics from "./React_Basics.png";
 import Shiash_Intern from "./Shiash_Intern.png";
+import Portfolio from "./Portfolio.png";
 
 export const skills = [
   {
@@ -168,6 +169,17 @@ export const project1 = [
     desc: "NPTEL Chrome Extension AI Helper is a Chrome extension that improves the NPTEL learning experience by offering an AI chatbot for quiz help, programming doubts, and a bookmarking feature for easy access to content",
   },
   {
+    img: Portfolio,
+    name: "Portfolio",
+    skills: ["React", "Tailwindcss", "Node js", "JavaScript", "Html"],
+    livedemo: "https://nandhakumarpv.netlify.app",
+    github: "https://github.com/Nandhu270/portfolio",
+    desc: "A visually engaging and fully responsive personal portfolio website created using HTML, CSS, and React.js. This project showcases my skills, projects, experience, and contact details in a structured and user-friendly manner. It includes modern design elements, animations, and responsive layouts to ensure optimal viewing on all devices",
+  },
+];
+
+export const project2 = [
+  {
     img: Villa_App,
     name: "Villa App",
     skills: ["Html", "css", "Bootstrap"],
@@ -175,9 +187,6 @@ export const project1 = [
     github: "https://github.com/Nandhu270/VILLA-WEBSITE",
     desc: "A visually appealing and responsive static website for villa booking, created using HTML and CSS. This project provides a streamlined way to showcase villa details, company information, locations, and an easy-to-use contact page",
   },
-];
-
-export const project2 = [
   {
     img: Quiz_App,
     name: "Quiz App",
